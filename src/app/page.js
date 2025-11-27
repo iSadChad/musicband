@@ -1,4 +1,6 @@
 "use client";
+import Image from 'next/image'
+
 export default function Home() {
   return (
     <>
@@ -36,10 +38,10 @@ export default function Home() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  hmmm
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#"></a></li>
+                  <li><a className="dropdown-item" href="#"></a>uhhh</li>
                   <li><a className="dropdown-item" href="#">Another action</a></li>
                   <li><hr className="dropdown-divider" /></li>
                   <li><a className="dropdown-item" href="#">Something else here</a></li>
@@ -59,7 +61,19 @@ export default function Home() {
           </div>
         </div>
       </nav>
-    </>
+<div className="container-lg">
+<p className="Intro">
+  NewJeans is a South Korean Girl Group formed by ADOR, a sub-label of Hybe.
+</p>
+</div>
+<img className="NewJeans Img1"
+          src="newjeans-how-sweet-promo-image-landscape-1.jpg"
+          width={1290}
+          height={750}
+          alt="uhh"
+        />
+</>
+  
   );
 }
 
