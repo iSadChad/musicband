@@ -30,25 +30,7 @@ export default function Home() {
               <li className="nav-item">
                 <a className="nav-link" href="#">Shop</a>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  hmmm
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#"></a>uhhh</li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
             </ul>
-
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2"
@@ -61,17 +43,17 @@ export default function Home() {
           </div>
         </div>
       </nav>
-<div className="container-lg">
-<p className="Intro">
-  NewJeans is a South Korean Girl Group formed by ADOR, a sub-label of Hybe.
-</p>
+<div className="container" style={{width: "25em"}}>
+    <h5 className="card-title">NewJeans</h5>
+    <p className="card-text">NewJeans is a South Korean Girl Group formed by ADOR, a sub-label of Hybe.</p>
 </div>
-<img className="NewJeans Img1"
+<img className="NewJeans Img1 ml-50"
           src="newjeans-how-sweet-promo-image-landscape-1.jpg"
-          width={1290}
-          height={750}
-          alt="uhh"
+          width={500}
+          height={281}
+          alt="NewJeans"
         />
+
 </>
   
   );
