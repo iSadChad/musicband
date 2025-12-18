@@ -8,7 +8,7 @@ import "./globals.css";
 
 export default function HomePage() {
   return (
-    <Container className='mt-5'>
+    <Container>
       <Row className='mt-5'>
         <Col>
           <Image src="/pics/newjeans1.jpg" rounded className='w-50 mt-5'/>
@@ -26,6 +26,3 @@ export default function HomePage() {
     </Container>
   );
 }
-
-
-  
