@@ -8,7 +8,7 @@ export default function AlbumCard({ title, type, year, cover, tracks, mvLinks })
     <div className="flip-card h-100">
       <div className="flip-card-inner">
         <div className="flip-card-face flip-card-front">
-          <Card className="h-100 shadow-sm">
+          <Card className="h-100 shadow-sm album-card">
             <Card.Img variant="top" src={cover} alt={`${title} cover`} className="album-cover"/>
             <Card.Body>
               <Card.Title className="mb-1">{title}</Card.Title>
@@ -21,7 +21,7 @@ export default function AlbumCard({ title, type, year, cover, tracks, mvLinks })
         </div>
 
         <div className="flip-card-face flip-card-back">
-          <Card className="h-100 shadow-sm">
+          <Card className="h-100 shadow-sm album-card">
             <Card.Body className="d-flex flex-column">
               <Card.Title className="mb-1">{title}</Card.Title>
               <Card.Text className="text-muted mb-3">

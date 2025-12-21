@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import "./globals.css";
 import NavBar from './components/navbar'; 
+import Footer from './components/footer';
 
 export const metadata = {
   title: "NewJeans",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <NavBar/>
         <div>{children}</div>
+        <Footer />
         </body>
     </html>
   );
