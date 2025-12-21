@@ -1,17 +1,13 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 :root {
-  --background: rgb(188, 229, 243);
+  --background: rgb(156, 210, 228);
   --foreground: black;
 }
  
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: rgb(123, 123, 240);
+    --background: rgb(172, 207, 248);
     --foreground: black;
   }
 }
@@ -28,7 +24,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -44,12 +40,30 @@ a {
   text-decoration: none;
 }
  
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
  
+.album-cover {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .album-cover { max-width: 260px; }
+}
+
+@media (max-width: 576px) {
+  .album-cover { max-width: 180px; }
+}
+
 main {
   flex: 1;
 }
@@ -62,5 +76,52 @@ main {
 footer {
   margin-top: auto;
 }
+
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ae98e9 !important;
+  font-size: 20px;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #1784a5 !important;
+}
+
  
- 
+.flip-card {
+  border-radius: 12px;
+  width: 100%;
+  min-height: 360px;   
+  perspective: 1000px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.album-card {
+  background-color: #e9f6fb;
+  border: none;
+}
