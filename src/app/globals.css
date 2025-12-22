@@ -1,13 +1,13 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 :root {
-  --background: rgb(156, 210, 228);
+  --background: rgb(185, 216, 252);
   --foreground: black;
 }
  
 @media (prefers-color-scheme: light) {
   :root {
-    --background: rgb(172, 207, 248);
+    --background: rgb(74, 154, 247);
     --foreground: black;
   }
 }
@@ -74,20 +74,21 @@ main {
  
 footer {
   background-color: #d4eef7;
-  font-size: 18px;
-  margin-top: auto;
+  color: #fcbfe5 !important;
+  font-size: 20px;
 }
 
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-  color: #ae98e9 !important;
+  color: #cfbffc !important;
   font-size: 20px;
+  margin-right: 50px;
 }
 
 .navbar .nav-link:hover,
 .navbar .navbar-brand:hover {
-  color: #1784a5 !important;
+  color: #c592ff !important;
 }
 
 
@@ -139,3 +140,23 @@ footer {
   grid-template-rows: 1fr auto;
 }
 
+.wide-container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.shop-card {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-3px);
+}
+
+.shop-img {
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}

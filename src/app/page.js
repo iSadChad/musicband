@@ -8,19 +8,26 @@ import "./globals.css";
 
 export default function HomePage() {
   return (
-    <Container fluid>
-      <Row className='mt-5'>
-        <Col className='ms-lg-5 mt-5'>
-            <h1 className='mt-5'>NewJeans</h1>
+    <Container fluid className="wide-container px-4 py-5">
+      <Row>
+          <Col lg={9}>
+            <Image src="/pics/newjeans2.jpg" rounded fluid className="mt-5"/>  
+        </Col>
+        </Row>
+      <Row className="align-items-start g-4">
+      
+        <Col>
+            <h1>NewJeans</h1>
           <p>is a South Korean girl group known for redefining modern K-pop with a fresh, understated approach. Rather than relying on loud concepts or heavy storytelling, their music and visuals focus on everyday emotions, nostalgia, and natural charm. Their sound blends Y2K-inspired pop, R&B, and minimal production, creating something that feels both familiar and new. This distinct identity quickly set them apart and made them one of the most talked-about acts of their generation.</p> 
         </Col>
-        <Col>
-            <Image src="/pics/newjeans1.jpg" rounded className="w-50 mt-5 ms-lg-5"/>  
-        </Col>
+        
       </Row>
-      <Row>
-        <Col className='ms-lg-5 mt-5'>
-        <Image src="/pics/newjeans2.jpg" rounded className='w-25 mt-5'/>
+      <Row className='g-4 mt-5'>
+        <Col lg={6}>
+        <Image src="/pics/newjeans1.jpg" rounded fluid/>
+        </Col>
+        <Col lg={{span: 5, offset: 1 }} className='mt-5'>
+        <Image src="/pics/newjeans8.jpg" rounded fluid/>
         </Col>
       </Row>
     </Container>

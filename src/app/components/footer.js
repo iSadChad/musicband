@@ -6,9 +6,9 @@ import Col from "react-bootstrap/Col";
 
 export default function Footer() {
   return (
-    <footer className="bg-light mt-5 py-4">
+    <footer className="mt-5 py-4 ">
       <Container>
-        <Row className="align-items-center">
+        <Row>
           <Col md={6}>
             <p className="mb-0 text-muted">
               © {new Date().getFullYear()} NewJeans
@@ -30,6 +30,27 @@ export default function Footer() {
             >
               YouTube
             </a>
+            <a
+                href="https://twitter.com/NewJeans_ADOR"
+                target="_blank"
+                className="ms-3 text-decoration-none text-muted"
+            > 
+                Twitter
+            </a>
+            <a
+                href="https://www.tiktok.com/@newjeans_official"
+                target="_blank"
+                className="ms-3 text-decoration-none text-muted"
+            > 
+                TikTok
+            </a>
+             <a
+                href="https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"
+                target="_blank"
+                className="ms-3 text-decoration-none text-muted"
+            > 
+                Spotify
+            </a>            
           </Col>
         </Row>
       </Container>
