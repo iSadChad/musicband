@@ -16,7 +16,7 @@ export default function MemberCard({ member }) {
         <Card.Title className="mb-1">{member.stageName}</Card.Title>
         <Card.Subtitle className="text-muted mb-3">{member.fullName}</Card.Subtitle>
 
-        <ListGroup variant="flush" className="small">
+        <ListGroup className="small">
           <ListGroup.Item>
             <strong>Birthday:</strong> {member.birthday}
           </ListGroup.Item>

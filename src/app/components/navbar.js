@@ -10,9 +10,9 @@ import Link from 'next/link';
 
 function NavBar() {
   return (
-    <Navbar expand="xxl" className="bg-dark mb-4">
+    <Navbar expand="xxl" className="mb-4">
   <Container fluid className="px-5 px-lg-10">
-        <Navbar.Brand as={Link} href="/">NewJeans</Navbar.Brand>
+        <Navbar.Brand as={Link} href="/">Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

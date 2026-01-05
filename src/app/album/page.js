@@ -69,7 +69,7 @@ export default function Album() {
         Hover over a release to flip the cover and see the tracklist.
       </p>
 
-      <Row className="g-4">
+      <Row className="gy-5">
   {releases.map((r) => (
     <Col key={`${r.title}-${r.year}`} xs={12} sm={6} lg={4} className="d-flex">
       <AlbumCard {...r} className="flex-fill" />

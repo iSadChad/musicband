@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import MemberCard from "../components/membercards.js";
 
+
 export default function MembersPage() {
   const members = [
     {
@@ -73,7 +74,7 @@ export default function MembersPage() {
       Height: "Height: 170 cm (5’7″)",
       image: "/pics/hyein.jpg",
       facts: [
-        "Frequently described as the youngest member (maknae).",
+        "Is the maknae (youngest member).",
         "Hyein has a habit of examining people and staring at them, and cleaning before schedules.",
       ],
     },

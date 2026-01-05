@@ -4,12 +4,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";  
+import { Card, CardBody } from "react-bootstrap";
 
 export default function Biography() {
   return (
-    <Container fluid="lg" id="biography" className="mt-5">
+    <Container fluid="lg" id="biography" className="wide-container px-4 py-5">
       
-
+    <Card className="biography-card p-4 mb-10">   
+    <CardBody> 
       <Row className="align-items-start g-4 mt-5">
         <Col lg={7}>
           <h2>About NewJeans</h2>
@@ -38,20 +40,24 @@ export default function Biography() {
       </Row>
 
 
-      <Row className="align-items-start g-4 mt-4">
+      <Row className="align-items-start g-4 mt-5">
    <Col lg={7}>
-          <p>Despite their rapid rise, NewJeans has maintained a distinct artistic direction centered on authenticity and subtlety. Their success is often credited to a combination of strong musical identity, careful visual storytelling, and a willingness to deviate from established industry norms. As a result, NewJeans is widely regarded as one of the most influential K-pop acts of the early 2020s, contributing to a shift in how idol groups are introduced and perceived.</p>
+          <p>Despite their rapid rise, NewJeans has maintained a distinct artistic direction centered on authenticity and subtlety. Their success is often credited to a combination of strong musical identity, careful visual storytelling, and a willingness to deviate from established industry norms. As a result, NewJeans is widely regarded as one of the most influential K-pop acts of the early 2020s, contributing to a shift in how idol groups are introduced and perceived. Beyond their artistic impact, the group has also taken part in charitable initiatives and philanthropic efforts, using their visibility to support social causes and give back to the community. This balance between creative innovation and social responsibility has further strengthened their public image and influence beyond music alone.
+          </p>
         </Col>
-
-       
 
         <Col lg={5}>
           <Image
-            src="/pics/newjeans6.jpg" rounded fluid alt="NewJeans Biography Image"
-          />
+            src="/pics/newjeans3.jpg" rounded fluid alt="NewJeans Biography Image"/>
+        </Col>
+        <Col lg={{span: 5, offset: 1 }}>
+        <Image
+            src="/pics/newjeans10.jpg" rounded fluid alt="NewJeans Biography Image"/>
         </Col>
       </Row>
-
+  
+    </CardBody>
+    </Card>
     </Container>
   );
 }

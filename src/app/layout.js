@@ -6,6 +6,8 @@ import Footer from './components/footer';
 export const metadata = {
   title: "NewJeans",
   description: "eh",
+  icon: {"icon": "/favicon.svg"
+  },
 };
 
 export default function RootLayout({ children }) {
