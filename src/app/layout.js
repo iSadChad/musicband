@@ -5,14 +5,16 @@ import Footer from './components/footer';
 
 export const metadata = {
   title: "NewJeans",
-  description: "eh",
-  icon: {"icon": "/favicon.svg"
-  },
+  description: "Unofficial fan site for the K-pop group NewJeans",
+  icon: {"icon": "/favicon.svg"},
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head> 
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body className="d-flex flex-column min-vh-100">
         <NavBar />
         <main className="flex-grow-1">
